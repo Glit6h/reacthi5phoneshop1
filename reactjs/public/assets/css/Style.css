@@ -1,0 +1,159 @@
+body{
+    margin: 0;
+    background-color:white(224, 239, 245)
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+
+    display: grid;
+
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 100px 50px 1fr 100px;
+
+    gap: 0px;
+
+    padding: 10px;
+    box-sizing: border-box;
+    flex-direction: row;
+
+
+}
+
+.container div {
+    padding: 10px;
+    border: 1px solid white;
+
+
+}
+
+.header{
+    grid-column-start: 1;
+    grid-column-end: 7;
+    margin-bottom: 5px;
+}
+
+.spech{
+    grid-row-start: 2;
+    grid-column-start: span 5;
+    margin-bottom: 5px;
+}
+
+.content-large{
+    grid-column-start: span 5;
+    grid-row-end: 4;
+    grid-row-start: 3;
+}
+
+.content-small1{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start:span 1;
+    justify-self: start;
+    align-items: center;
+
+}
+
+.content-small2{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start:span 1;
+}
+
+.content-small3{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: span 1;
+
+}
+
+.content-small4{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: span 1;
+}
+
+.content-small5{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: span 1;
+}
+
+.content-long{
+    grid-row-start: span 3;
+    grid-column-start: 6;
+    margin-left: 5px;
+}
+
+.row-long{
+    grid-row-start:4;
+    grid-column-start: span 5;
+    margin-top: 5px;
+}
+
+.flex-box{
+    border: solid white;
+    width: flex;
+    height: flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+
+    grid-template-columns:repeat(5, 1fr) ;
+    grid-template-rows: 1fr;
+
+    margin-left: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    gap: 5px;
+
+}
+
+.flex-box > div > div{
+    border:white
+
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.cost{
+    padding-left: 20;
+    justify-content: center;
+}
+
+.button{
+    width: 200px;
+    height: 200px;
+}
+
+.content-long > img{
+    width: 400px;
+    height: 100%;
+    object-fit: cover;
+    margin: 0%;
+
+}
+
+.header > img{
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+
+    margin-right: 10px;
+    float: left;
+}
+
+.spech{
+    margin-left: 25px;
+}
+

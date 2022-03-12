@@ -1,0 +1,44 @@
+            .container{
+            border: solid rgb(240, 240, 248);
+            width: flex;
+            height: flex;
+            display: flex;
+            flex-wrap: wrap;
+    
+
+            grid-template-columns:repeat(2, 1fr) ;
+            grid-template-rows: 1fr;
+
+            margin-left: auto;
+            padding: 10-px;
+            box-sizing: border-box;
+            gap: 5px;
+
+            margin: 20px;
+
+        }
+
+        .photo{
+            grid-row-start: auto;
+        }
+
+        .body> div> div> img{
+            width:500px;
+            height: 500px;
+            object-fit: cover;
+        }
+
+        .text{
+
+            grid-row-start: span 1;
+
+            display: grid;
+            border: 1px solid azure;
+            padding: 20px;
+            box-sizing: border-box;
+            margin: auto;
+        }
+
+        .name{
+            padding-left: 30%;
+        }
